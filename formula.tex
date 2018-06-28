@@ -17,11 +17,13 @@
 	I_J=I_0\sin(\delta(t))\\
 	I(z=0,t)=I_{in}(t)-I_{out}(t)\\
 	V(z=0,t)=V_{out}(t)+V_{in}(t)=(I_{in}(t)+I_{out}(t))Z_c\\
-	I(z=0,t)=2I_{in}(t)-V(z=0,t)/Z_c\\
+	I(z=0,t)=2I_{in}(t)-V(z=0,t)/Z_c=2I_{in}(t)-\frac{\varphi_0}{Z_c}\frac{d \delta(t)}{dt}\\
+	I_{in}(t)=I_p\cos(\omega_pt)\\
 	C\varphi_0\frac{d^2\delta(t)}{dt^2}+\frac{\varphi_0}{Z_c}\frac{d\delta(t)}{dt}+I_0\sin(\delta(t))=2I_{in}(t)\\
-	\frac{d^2\delta(t)}{dt^2}+2\gamma\frac{d \delta(t)}{dt}+\omega^2_0(\delta(t)-\frac{\delta^3(t)}{6})=\frac{2I_p}{C \varphi_0}\cos(\omega_pt)
+	\frac{d^2\delta(t)}{dt^2}+2\gamma\frac{d \delta(t)}{dt}+\omega^2_0(\delta(t)-\frac{\delta^3(t)}{6})=\frac{2I_p}{C \varphi_0}\cos(\omega_pt)\\
+	\gamma=\frac{1}{2Z_cC}\\
+	\omega_0^2=\frac{I_0}{C\varphi_0}\\
+	\sin(\delta(t))\approx \delta(t)-\frac{\delta^3(t)}{6}\\
 \end{gather}
-
-
 
 \end{document}
